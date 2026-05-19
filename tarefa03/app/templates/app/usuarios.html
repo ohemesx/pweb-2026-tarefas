@@ -1,0 +1,15 @@
+<h1>Lista de Usuários</h1>
+
+{% for usuario in usuarios %}
+
+<p>Nome: {{ usuario.nome }}</p>
+
+<p>Matrícula: {{ usuario.matricula }}</p>
+
+<p>Idade: {{ usuario.idade }}</p>
+
+<p>Cidade: {{ usuario.cidade }}</p>
+
+<hr>
+
+{% endfor %}
