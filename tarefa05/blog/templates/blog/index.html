@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+    <title>Diário de bordo</title>
+</head>
+<body>
+    <header>
+        <h1>Diário de bordo</h1>
+        <a href="{% url 'index' %}">Home</a>
+    </header>
+
+    <h2>Posts recentes</h2>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{% url 'post_detail' post.id %}">{{ post.titulo }}</a> - {{ post.data_publicacao }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <footer>
+        <p>blog</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d7c1f9, #f3e9ff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header a {
+    color: #f3e9ff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+.post-list {
+    max-width: 1000px;
+    margin: 60px auto 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.post-detail {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(106,13,173,0.3);
+}
+
+.post-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-card h2 {
+    margin: 15px 0 5px;
+    color: #6a0dad;
+}
+
+.post-card small {
+    color: #777;
+}
+
+.post-card p {
+    background-color: #eee;
+    padding: 15px;
+    margin: 0;
+    line-height: 1.5;
+    color: #444;
+}
+
+footer {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
