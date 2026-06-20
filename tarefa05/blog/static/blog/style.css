@@ -34,7 +34,7 @@ header a:hover {
     gap: 20px;
 }
 
-.post-detail {
+.post {
     display: flex;
     justify-content: center;
     margin: 60px auto;

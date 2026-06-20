@@ -15,13 +15,13 @@
     <ul>
         {% for post in posts %}
             <li>
-                <a href="{% url 'post_detail' post.id %}">{{ post.titulo }}</a> - {{ post.data_publicacao }}
+                <a href="{% url 'post' post.id %}">{{ post.titulo }}</a> - {{ post.data_publicacao }}
             </li>
         {% endfor %}
     </ul>
 
     <footer>
-        <p>blog</p>
+        <p>Blog Desenvolvido por Hemerson Daniel</p>
     </footer>
 </body>
 </html>
