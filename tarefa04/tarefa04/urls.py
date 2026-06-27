@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tarefas/', include('tarefas.urls')),  # conecta a app tarefas
+    path('', include('tarefas.urls')),
 ]
